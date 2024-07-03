@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchBox = () => {
+const Hero = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const SearchBox = () => {
   )
 }
 
-export default SearchBox
+export default Hero
