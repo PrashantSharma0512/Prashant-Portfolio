@@ -1,18 +1,20 @@
 import React, { Fragment } from 'react';
 import { Link, NavLink } from 'react-router-dom'
 import logo from '../Image/react.svg';
-import  Drawerr  from './Drawerr';
+import Drawerr from './Drawerr';
+import { FaLinkedinIn } from "react-icons/fa";
+import { PiLastfmLogoBold } from "react-icons/pi";
 
 function Nav() {
     return (
 
         <Fragment>
-            <nav className='flex justify-evenly  p-6 max-md:flex-col max-md:w-screen'>
+            <nav className='flex justify-between   max-md:p-8   w-auto h-auto '>
                 {/* logo */}
-                <div className=''>
-                    <img src={logo} alt="" className='max-md:w-16 max-md:relative '/>
+                <div className='text-green-500 text-3xl'>
+                    <Link to={'/'}><PiLastfmLogoBold color='white' size={60}/></Link>
                 </div>
-                <div className='max-md:hidden'>
+                <div className='max-md:hidden flex justify-center items-center gap-4 '>
                     <ul className='flex gap-8 '>
                         <li>
                             <NavLink to="/"
@@ -25,10 +27,10 @@ function Nav() {
                             >About</NavLink>
                         </li>
                         <li>
-                            <a 
-                            className='text-zinc-400 hover:text-white lg:p-0 font-semibold hover:underline'
-                            href='#'
-                            download='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
+                            <a
+                                className='text-zinc-400 hover:text-white lg:p-0 font-semibold hover:underline'
+                                href='#'
+                                download='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
                             >Resume</a>
                         </li>
                         <li>
@@ -36,10 +38,17 @@ function Nav() {
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0 font-semibold hover:underline `}
                             >Contacts</NavLink>
                         </li>
+                        <li>
+                            <a href='www.linkedin.com/in/prashant-sharma-0216ba251'>
+                            <FaLinkedinIn color='white' size={30}/>
+                            </a>
+                        </li>
                     </ul>
+                    
+
                 </div>
-                <div className=''>
-                    <Drawerr/>
+                <div className='max-md:block hidden '>
+                    <Drawerr />
                 </div>
             </nav>
         </Fragment>
