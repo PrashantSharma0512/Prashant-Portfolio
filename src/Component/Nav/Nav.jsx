@@ -17,20 +17,22 @@ function Nav() {
                 <div className='max-md:hidden flex justify-center items-center gap-4 '>
                     <ul className='flex gap-8 '>
                         <li>
-                            <NavLink to="/"
+                            <NavLink to="/hero"
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white hover:underline  lg:p-0 font-semibold `}
                             >Home</NavLink>
                         </li>
                         <li>
                             <NavLink to="/about"
+                            
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0 font-semibold hover:underline`}
                             >About</NavLink>
                         </li>
                         <li>
                             <a
-                                className='text-zinc-400 hover:text-white lg:p-0 font-semibold hover:underline'
-                                href='#'
-                                download='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
+                            href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
+                                className='text-zinc-400 hover:text-white lg:p-0 font-semibold hover:underline cursor-pointer'
+                                download={''}
+                                
                             >Resume</a>
                         </li>
                         <li>
