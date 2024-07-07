@@ -21,19 +21,19 @@ const Drawerr = () => {
         <div className='text-2xl flex justify-center p-4'>
           <ul className={` uppercase w-full transition-all duration-1000 `}>
             <li className={style}>
-              <Link to='/hero' className='flex gap-10'>
+              <Link to='/' className='flex gap-10' onClick={() => setIsopen(!isopen)}>
                 <FiHome />home
               </Link>
             </li>
             <li className={style}>
-              <Link to='/about' className='flex gap-10'><BiMessageSquare />about
-              </Link>
-            </li>
-            <li className={style}>
-              <a href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true' className='flex gap-10 hover:cursor-pointer' ><LiaCloudDownloadAltSolid size={20} />resume
+              <a href='#project' className='flex gap-10' onClick={() => setIsopen(!isopen)}><BiMessageSquare />Project
               </a>
             </li>
-            <li className={style}><a href='#c4' className='flex gap-10' >
+            <li className={style}>
+              <a href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'onClick={() => setIsopen(!isopen)} className='flex gap-10 hover:cursor-pointer' ><LiaCloudDownloadAltSolid size={20} />resume
+              </a>
+            </li>
+            <li className={style}><a href='#c4' className='flex gap-10' onClick={() => setIsopen(!isopen)} >
               <RiContactsLine />Contact
             </a>
             </li>

@@ -2,13 +2,14 @@ import React from 'react'
 import weather from '../Image/demo image.png'
 import ecom from '../Image/ecom.png'
 import otp from '../Image/Demo.png'
+import { IoIosArrowRoundForward } from "react-icons/io";
 import port from '../Image/port.png'
 
 const Project = () => {
     const cls = 'pt-1 pb-1 pl-5 pr-5 rounded-lg text-purple-900 bg-purple-500 bg-opacity-15 border border-transparent'
     return (
         <div className='flex flex-col justify-start items-center'>
-            <center className='text-white text-4xl'>Projects</center>
+            <center id='project' className='text-white text-4xl'>Projects</center>
             <br />
             <br />
             {/* first project */}
@@ -21,7 +22,7 @@ const Project = () => {
                 <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>Weather App</h1>
                     The weather app is a simple web application built using HTML, CSS, and JavaScript. It provides real-time weather information based on the user’s location. <br />
-                    Use Api: <a href="https://api.openweathermap.org" className='text-red-700'>Weather Api</a>
+                    <a href="https://github.com/PrashantSharma0512/WeatherAppJS" target='_blank' className='text-orange-400 '>[Project Link]</a>
                     <br />
                     <br />
                     <div className='flex gap-4'>
@@ -65,7 +66,8 @@ const Project = () => {
                 </div>
                 <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>OTP Generator</h1>
-                    An OTP (One-Time Password) generator creates unique, temporary codes for secure authentication.Build using html,css,JavaScript.
+                    An OTP (One-Time Password) generator creates unique, temporary codes for secure authentication.Build using html,css,JavaScript. <br />
+                    <a href="https://prashantsharma0512.github.io/OTP-Generator/" target='_blank' className='text-orange-400 '>[Project Link]</a>
                     <br />
                     <br />
                     <div className='flex gap-4'>

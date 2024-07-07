@@ -9,7 +9,7 @@ function Nav() {
     return (
 
         <Fragment>
-            <nav className='flex justify-between   max-md:p-8   w-auto h-auto '>
+            <nav className='flex justify-between   max-md:p-8   w-auto h-auto  '>
                 {/* logo */}
                 <div className='text-green-500 text-3xl'>
                     <Link to={'/'} className='flex'>
@@ -23,12 +23,12 @@ function Nav() {
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white hover:underline  lg:p-0 font-semibold `}
                             >Home</NavLink>
                         </li>
-                        {/* <li>
-                            <NavLink to="/about"
-
-                                className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0 font-semibold hover:underline`}
-                            >About</NavLink>
-                        </li> */}
+                        <li>
+                            <a 
+                            href='#project'
+                                className={` lg:hover:bg-transparent lg:border-0 text-zinc-400 lg:p-0 font-semibold hover:underline `}
+                            >Project</a>
+                        </li>
                         <li>
                             <a
                                 href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'

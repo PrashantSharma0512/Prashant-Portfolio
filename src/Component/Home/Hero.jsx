@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react'
 import photo from '../Image/photoji.png'
-import blob from '../Image/blob.svg'
-
-import { FaLinkedinIn } from "react-icons/fa";
 import Techno from './Techno';
 import Project from './Project';
 import Contact2 from '../Contact/Contact2';
@@ -21,11 +18,11 @@ const Hero = () => {
       <div className='flex w-full h-full  max-md:block'>
         <div className=' w-full h-full text-white'>
           <div className=' flex justify-center items-center text-center bg-gradient-to-r from-pink-950 via-slate-500 to-purple-900 bg-clip-text text-6xl tracking-tight text-transparent select-none'>Prashant Sharma</div>
-          <div className=' flex  flex-col justify-center items-center text-2xl'>
+          <div className=' flex  flex-col justify-center items-center text-2xl pl-4'>
             <br />
             <span className='bg-gradient-to-r from-red-700 via-slate-500 to-yellow-500 bg-clip-text text-4xl tracking-tight text-transparent select-none'>Full Stack Developer</span>
             <br />
-            “I am a passionate full-stack developer with a knack for crafting robust and scalable web applications. With years of hands-on experience, I have honed my skills in front-end technologies like React and tailwind, as well as back-end technologies like Node.js, MySQL, ExpressJS, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.”
+            I am a passionate full-stack developer with a knack for crafting robust and scalable web applications. With years of hands-on experience, I have honed my skills in front-end technologies like React and tailwind, as well as back-end technologies like Node.js, MySQL, ExpressJS, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.
           </div>
         </div>
         <br />
