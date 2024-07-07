@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
 import { useState } from 'react';
-import logo from '../Image/react.svg'
 import { Link } from 'react-router-dom'
 import { BiMessageSquare } from "react-icons/bi";
 import { FiHome, FiMenu } from 'react-icons/fi'
 import { LiaCloudDownloadAltSolid } from "react-icons/lia";
 import { RiContactsLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
+import { BiLogoPinterest } from "react-icons/bi";
 const Drawerr = () => {
   const [isopen, setIsopen] = useState(false)
   const style = "hover:bg-zinc-400 uppercase w-full  "
@@ -16,7 +16,7 @@ const Drawerr = () => {
         <br />
         <br />
         {/* logo */}
-        <div className='flex justify-center h-10'><img src={logo} alt="" /></div>
+        <div className='flex justify-center items-center h-10'><BiLogoPinterest color='white' size={50} /></div>
         {/* list items */}
         <div className='text-2xl flex justify-center p-4'>
           <ul className={` uppercase w-full transition-all duration-1000 `}>
