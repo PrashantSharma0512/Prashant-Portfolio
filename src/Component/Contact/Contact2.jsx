@@ -54,7 +54,15 @@ const Contact2 = () => {
                         />
                     </div>
                     <div className='w-full flex justify-center items-center p-6 text-black'>
-                        <textarea name="" id="" rows={10} cols={60} className='resize-none black p-4' autoComplete='on' placeholder='Write Your Message' />
+                        <textarea
+                            name="message"
+                            id=""
+                            rows={10} 
+                            cols={60}
+                            className='resize-none black p-4'
+                            autoComplete='on'
+                            placeholder='Write Your Message'>
+                        </textarea>
                     </div>
                 </div>
                 <button type="submit" className=' pl-4 pr-4 rounded-xl flex pt-2 pb-2 justify-center items-center gap-2 hover:bg-blue-400 bg-blue-700' name='send'>Send<MdSend size={20} color='white' /></button> <br />
