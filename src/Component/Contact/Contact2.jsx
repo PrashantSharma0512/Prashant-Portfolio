@@ -8,6 +8,7 @@ import { LuTwitter } from "react-icons/lu";
 import { SiGeeksforgeeks } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 const Contact2 = () => {
+
     const inpclass = "w-[90%] h-1/6 p-3 text-black"
     const SocialClass = 'hover:scale-110'
     return (
@@ -26,22 +27,37 @@ const Contact2 = () => {
                 <a href="https://leetcode.com/u/Prashant_0512/"
                     target='_blank' className={SocialClass}><TbBrandLeetcode size={30} /></a>
                 <a href="https://www.geeksforgeeks.org/user/prashantsharma0512/"
-                    target='_blank' className={SocialClass}><SiGeeksforgeeks size={30}  /></a>
+                    target='_blank' className={SocialClass}><SiGeeksforgeeks size={30} /></a>
             </div>
             <br />
             <br />
-            <form className='border-2 border-zinc-400 rounded-3xl' >
+            <form className='border-2 border-zinc-400 rounded-3xl' method='POST' action='https://formspree.io/f/mjkbvlqr'>
                 <div className='flex max-md:block  max-md:pt-3'>
                     <div className='w-full  flex flex-col gap-3  justify-center items-center'>
-                        <input type="text" className={inpclass} placeholder='Enter the Name' />
-                        <input type="email" className={inpclass} placeholder='Enter the Email' />
-                        <input type="number" className={inpclass} placeholder='Enter the Phone Number' />
+                        <input
+                            type="text"
+                            name='name'
+                            className={inpclass}
+                            placeholder='Enter the Name'
+                        />
+                        <input
+                            type="email"
+                            name='email'
+                            className={inpclass}
+                            placeholder='Enter the Email'
+                        />
+                        <input
+                            name='number'
+                            type="number"
+                            className={inpclass}
+                            placeholder='Enter the Phone Number'
+                        />
                     </div>
                     <div className='w-full flex justify-center items-center p-6 text-black'>
                         <textarea name="" id="" rows={10} cols={60} className='resize-none black p-4' autoComplete='on' placeholder='Write Your Message' />
                     </div>
                 </div>
-                <button type="submit" className=' pl-4 pr-4 rounded-xl flex pt-2 pb-2 justify-center items-center gap-2 hover:bg-blue-400 bg-blue-700'>Send<MdSend size={20} color='white' /></button> <br />
+                <button type="submit" className=' pl-4 pr-4 rounded-xl flex pt-2 pb-2 justify-center items-center gap-2 hover:bg-blue-400 bg-blue-700' name='send' onClick={alert("Message Send Successful!")}>Send<MdSend size={20} color='white' /></button> <br />
             </form>
 
         </center>
