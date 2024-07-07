@@ -39,30 +39,34 @@ const Contact2 = () => {
                             name='name'
                             className={inpclass}
                             placeholder='Enter the Name'
+                            required
                         />
                         <input
                             type="email"
                             name='email'
                             className={inpclass}
                             placeholder='Enter the Email'
+                            required
                         />
                         <input
                             name='number'
                             type="number"
                             className={inpclass}
                             placeholder='Enter the Phone Number'
+                            required
                         />
                     </div>
                     <div className='w-full flex justify-center items-center p-6 text-black'>
                         <textarea
                             name="message"
                             id=""
-                            rows={10} 
+                            rows={10}
                             cols={60}
                             className='resize-none black p-4'
                             autoComplete='on'
-                            placeholder='Write Your Message'>
-                        </textarea>
+                            placeholder='Write Your Message'
+                            required
+                        ></textarea>
                     </div>
                 </div>
                 <button type="submit" className=' pl-4 pr-4 rounded-xl flex pt-2 pb-2 justify-center items-center gap-2 hover:bg-blue-400 bg-blue-700' name='send'>Send<MdSend size={20} color='white' /></button> <br />
