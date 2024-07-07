@@ -19,16 +19,16 @@ function Nav() {
                 <div className='max-md:hidden flex justify-center items-center gap-4 '>
                     <ul className='flex gap-8 '>
                         <li>
-                            <NavLink to="/hero"
+                            <NavLink to="/"
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white hover:underline  lg:p-0 font-semibold `}
                             >Home</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink to="/about"
 
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0 font-semibold hover:underline`}
                             >About</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <a
                                 href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
@@ -38,13 +38,14 @@ function Nav() {
                             >Resume</a>
                         </li>
                         <li>
-                            <NavLink to="/contact"
+                            <a 
                             href='#c4'
-                                className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white lg:p-0 font-semibold hover:underline `}
-                            >Contacts</NavLink>
+                                className={` lg:hover:bg-transparent lg:border-0 text-zinc-400 lg:p-0 font-semibold hover:underline `}
+                            >Contacts</a>
                         </li>
                         <li>
-                            <a href='www.linkedin.com/in/prashant-sharma-0216ba251'>
+                            <a href='https://www.linkedin.com/in/prashant-sharma-0216ba251'
+                            target='_blank'>
                                 <FaLinkedinIn color='white' size={30} />
                             </a>
                         </li>

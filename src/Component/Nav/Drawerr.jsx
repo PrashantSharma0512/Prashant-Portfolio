@@ -33,9 +33,9 @@ const Drawerr = () => {
               <a href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true' className='flex gap-10 hover:cursor-pointer' ><LiaCloudDownloadAltSolid size={20} />resume
               </a>
             </li>
-            <li className={style}><Link to='/contact' className='flex gap-10' >
+            <li className={style}><a href='#c4' className='flex gap-10' >
               <RiContactsLine />Contact
-            </Link>
+            </a>
             </li>
           </ul>
         </div>

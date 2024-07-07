@@ -1,12 +1,5 @@
 import { Outlet } from 'react-router-dom'
 import Nav from './Component/Nav/Nav'
-import Contact from './Component/Contact/Contact'
-import { Fragment } from 'react'
-import Hero from './Component/Home/Hero'
-import About from './Component/Home/About'
-import Techno from './Component/Home/Techno'
-import Project from './Component/Home/Project'
-import Contact2 from './Component/Contact/Contact2'
 
 function App() {
 
@@ -22,6 +15,7 @@ function App() {
        
 
       </div>
+      <center className=' text-white bg-zinc-600'>Thank You Visiting My Portfolio</center>
     </div>
   )
 }
