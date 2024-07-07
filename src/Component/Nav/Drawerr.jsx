@@ -12,7 +12,7 @@ const Drawerr = () => {
   const style = "hover:bg-zinc-400 uppercase w-full  "
   return (
     <Fragment>
-      <div className={`max-md:bg-zinc-900 h-screen bg-zinc-900 text-white fixed   left-0 top-0 border border-black ${isopen ? 'left-0 transition-all duration-700 ' : 'left-[-300px] lg:hidden transition-all duration-1000'} `}>
+      <div className={`max-md:bg-zinc-900 h-screen bg-zinc-900 text-white fixed   left-0 top-0 border border-black ${isopen ? 'left-0 transition-all duration-700 overflow-hidden ' : 'left-[-300px] lg:hidden transition-all duration-1000'} `}>
         <br />
         <br />
         {/* logo */}
