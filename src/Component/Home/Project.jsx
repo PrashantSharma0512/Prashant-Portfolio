@@ -7,20 +7,21 @@ import port from '../Image/port.png'
 const Project = () => {
     const cls = 'pt-1 pb-1 pl-5 pr-5 rounded-lg text-purple-900 bg-purple-500 bg-opacity-15 border border-transparent'
     return (
-        <div>
+        <div className='flex flex-col justify-start items-center'>
             <center className='text-white text-4xl'>Projects</center>
             <br />
             <br />
             {/* first project */}
-            <center className='flex justify-center max-md:flex-wrap'>
-                <div className='w-full pb-2 border-zinc-700 '>
+            <center className='w-full flex justify-center max-md:flex-wrap '>
+                <div className='w-full pb-2 border-zinc-700'>
                     <center className=' flex justify-center items-center'>
                         <img src={weather} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='text-left text-white p-4'>
+                <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>Weather App</h1>
-                    The weather app is a simple web application built using HTML, CSS, and JavaScript. It provides real-time weather information based on the user’s location.
+                    The weather app is a simple web application built using HTML, CSS, and JavaScript. It provides real-time weather information based on the user’s location. <br />
+                    Use Api: <a href="https://api.openweathermap.org" className='text-red-700'>Weather Api</a>
                     <br />
                     <br />
                     <div className='flex gap-4'>
@@ -34,13 +35,13 @@ const Project = () => {
             <br />
             <br />
             {/* second project */}
-            <center className='flex justify-center max-md:flex-wrap'>
+            <center className='flex justify-center max-md:flex-wrap '>
                 <div className='w-full pb-2 border-zinc-700 '>
                     <center className=' flex justify-center items-center'>
                         <img src={ecom} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='text-left text-white p-4'>
+                <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>E-Commerce Website</h1>
                     A modern e-commerce site created with React, styled using Tailwind CSS, and powered by Firebase. It includes features like product listings, cart functionality, and user authentication.
                     <br />
@@ -56,14 +57,14 @@ const Project = () => {
             <br />
             <br />
             {/* Third project */}
-            <center className='flex justify-center max-md:flex-wrap'>
+            <center className=' w-full flex justify-center max-md:flex-wrap '>
                 <div className='w-full pb-2 border-zinc-700 '>
                     <center className=' flex justify-center items-center'>
                         <img src={otp} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='text-left text-white p-4'>
-                    <h1 className='text-2xl pb-2'>OIP Generator</h1>
+                <div className='w-full text-left text-white p-4'>
+                    <h1 className='text-2xl pb-2'>OTP Generator</h1>
                     An OTP (One-Time Password) generator creates unique, temporary codes for secure authentication.Build using html,css,JavaScript.
                     <br />
                     <br />
@@ -84,7 +85,7 @@ const Project = () => {
                         <img src={port} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='text-left text-white p-4'>
+                <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>Portfolio Website</h1>
                     A sleek and responsive portfolio website crafted with React.js and styled using Tailwind CSS. Showcase your skills, projects, and achievements in an organized and visually appealing manner.
                     <br />

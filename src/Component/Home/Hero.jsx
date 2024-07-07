@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import photo from '../Image/photoji.png'
 import blob from '../Image/blob.svg'
 
 import { FaLinkedinIn } from "react-icons/fa";
+import Techno from './Techno';
+import Project from './Project';
+import Contact2 from '../Contact/Contact2';
 const Hero = () => {
   const egg = {
     display: 'block',
@@ -14,6 +17,7 @@ const Hero = () => {
   }
 
   return (
+    <Fragment>
     <div className='flex w-full h-full  max-md:block'>
       <div className=' w-full h-full text-white'>
         <div className=' flex justify-center items-center text-center bg-gradient-to-r from-pink-950 via-slate-500 to-purple-900 bg-clip-text text-6xl tracking-tight text-transparent select-none'>Prashant Sharma</div>
@@ -30,6 +34,10 @@ const Hero = () => {
         <div  className='w-auto h-auto bg-gradient-to-r from-indigo-300 to-indigo-800 hover:scale-105 hover:transition-all hover:duration-300  rounded-full overflow-hidden min-w-28 '><img src={photo} alt="hdjhjd" /></div>
       </div>
     </div>
+    <Techno/>
+      <Project/>
+      <Contact2/>
+    </Fragment>
   )
 }
 

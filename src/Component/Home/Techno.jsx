@@ -10,8 +10,8 @@ import { LiaJava } from "react-icons/lia";
 const Techno = () => {
     const animation = "animate-[bounce_1.3s_ease-in-out_infinite] duration-500 rounded-2xl  p-4"
   return (
-    <div className=''>
-      <center className='text-white text-4xl pb-10'>Skill</center>
+    <div className='pt-4'>
+      <center className='text-white text-4xl pb-10 max-md:pt-6'>Skill</center>
       <div className='flex justify-center gap-8 flex-wrap '>
         <div className={animation}>
             <GrReactjs color='#5DE2E7' size={60}/>

@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import about from '../Image/about.jpeg'
 const About = () => {
   return (
-    <div className='p-8 '>
+    <div className=''>
         <div className=' text-center bg-gradient-to-r from-red-700  to-yellow-500 bg-clip-text text-5xl tracking-tight text-transparent select-none' id='about'>About</div>
         <br />
         <br />
