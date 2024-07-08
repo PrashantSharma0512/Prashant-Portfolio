@@ -22,7 +22,7 @@ const Project = () => {
                 <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>Weather App</h1>
                     The weather app is a simple web application built using HTML, CSS, and JavaScript. It provides real-time weather information based on the user’s location. <br />
-                    <a href="https://github.com/PrashantSharma0512/WeatherAppJS" target='_blank' className='text-orange-400 '>[Project Link]</a>
+                    <a href="https://prashantsharma0512.github.io/WeatherAppJS/" target='_blank' className='text-orange-400 '>[Project Link]</a>
                     <br />
                     <br />
                     <div className='flex gap-4'>
