@@ -9,7 +9,7 @@ function Nav() {
     return (
 
         <Fragment>
-            <nav className='flex justify-between   max-md:p-8   w-auto h-auto  '>
+            <nav className='flex justify-between   max-md:p-0   w-auto h-auto  '>
                 {/* logo */}
                 <div className='text-green-500 text-3xl'>
                     <Link to={'/'} className='flex'>
