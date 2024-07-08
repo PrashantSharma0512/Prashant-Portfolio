@@ -41,7 +41,7 @@ const Drawerr = () => {
         </div>
       </div>
       {/* hamburger menu */}
-      <div className='cursor-pointer ' onClick={() => setIsopen(!isopen)}>{isopen ? <FaArrowLeft size={40} color='green' /> : <FiMenu size={40} color='green' />}</div>
+      <div className='cursor-pointer ' onClick={() => setIsopen(!isopen)}>{isopen ? <FaArrowLeft size={40} color='white' /> : <FiMenu size={40} color='white' />}</div>
     </Fragment>
   )
 }
