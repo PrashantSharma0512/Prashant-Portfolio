@@ -89,7 +89,9 @@ const Project = () => {
                 </div>
                 <div className='w-full text-left text-white p-4'>
                     <h1 className='text-2xl pb-2'>Portfolio Website</h1>
-                    A sleek and responsive portfolio website crafted with React.js and styled using Tailwind CSS. Showcase your skills, projects, and achievements in an organized and visually appealing manner.
+                    A sleek and responsive portfolio website crafted with React.js and styled using Tailwind CSS. Showcase your skills, projects, and achievements in an organized and visually appealing manner. <br />
+                    <a href=" https://prashant-portfolio-one.vercel.app/" target='_blank' className='text-orange-400 '>[Project Link]</a>
+                   
                     <br />
                     <br />
                     <div className='flex gap-4'>
