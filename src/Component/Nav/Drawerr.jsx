@@ -7,6 +7,7 @@ import { LiaCloudDownloadAltSolid } from "react-icons/lia";
 import { RiContactsLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
 import { BiLogoPinterest } from "react-icons/bi";
+import resume from '../Image/Prashant_Resume.pdf'
 const Drawerr = () => {
   const [isopen, setIsopen] = useState(false)
   const style = "hover:bg-zinc-400 uppercase w-full  "
@@ -30,7 +31,7 @@ const Drawerr = () => {
               </a>
             </li>
             <li className={style}>
-              <a href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'onClick={() => setIsopen(!isopen)} className='flex gap-10 hover:cursor-pointer' ><LiaCloudDownloadAltSolid size={20} />resume
+              <a href={resume} onClick={() => setIsopen(!isopen)} className='flex gap-10 hover:cursor-pointer' ><LiaCloudDownloadAltSolid size={20} />resume
               </a>
             </li>
             <li className={style}><a href='#c4' className='flex gap-10' onClick={() => setIsopen(!isopen)} >

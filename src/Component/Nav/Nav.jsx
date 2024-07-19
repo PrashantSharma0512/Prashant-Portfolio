@@ -4,6 +4,7 @@ import logo from '../Image/react.svg';
 import Drawerr from './Drawerr';
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoPinterest } from "react-icons/bi";
+import resume from '../Image/Prashant_Resume.pdf'
 
 function Nav() {
     return (
@@ -31,7 +32,7 @@ function Nav() {
                         </li>
                         <li>
                             <a
-                                href='https://unsplash.com/photos/7WLPM8DWB44/download?force=true'
+                                href={resume}
                                 className='text-zinc-400 hover:text-white lg:p-0 font-semibold hover:underline cursor-pointer'
                                 download={''}
 
