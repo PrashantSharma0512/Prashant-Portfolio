@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import photo from '../Image/photoji.png'
+import prash from '../Image/prasha.jpg'
 import Techno from './Techno';
 import Project from './Project';
 import Contact2 from '../Contact/Contact2';
@@ -28,7 +29,7 @@ const Hero = () => {
         <br />
         <br />
         <div className=' w-full h-full  flex  justify-center items-center '>
-          <div className='w-auto h-auto bg-gradient-to-r from-indigo-300 to-indigo-800 hover:scale-105 hover:transition-all hover:duration-300  rounded-full overflow-hidden min-w-28 '><img src={photo} alt="hdjhjd" /></div>
+          <div className='w-auto h-auto bg-gradient-to-r from-indigo-300 to-indigo-800 hover:scale-105 hover:transition-all hover:duration-300  rounded-full overflow-hidden min-w-28 '><img src={prash} alt="hdjhjd" /></div>
         </div>
       </div>
       <Techno />
