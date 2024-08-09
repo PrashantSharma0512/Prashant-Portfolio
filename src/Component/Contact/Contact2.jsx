@@ -9,7 +9,7 @@ import { SiGeeksforgeeks } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 const Contact2 = () => {
 
-    const inpclass = "w-[90%] h-1/6 p-3 text-black"
+    const inpclass = "w-[90%] h-1/6 p-3 text-black rounded-lg focus:outline-none"
     const SocialClass = 'hover:scale-110'
     return (
         <center className='text-white'>
@@ -62,7 +62,7 @@ const Contact2 = () => {
                             id=""
                             rows={10}
                             cols={60}
-                            className='resize-none black p-4'
+                            className='resize-none black p-4 rounded-lg focus:outline-none '
                             autoComplete='on'
                             placeholder='Write Your Message'
                             required

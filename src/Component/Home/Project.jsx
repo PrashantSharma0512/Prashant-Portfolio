@@ -19,7 +19,7 @@ const Project = () => {
                         <img src={weather} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-left text-white p-4'>
+                <div className='w-full  text-white p-4 text-justify'>
                     <h1 className='text-2xl pb-2'>Weather App</h1>
                     The weather app is a simple web application built using HTML, CSS, and JavaScript. It provides real-time weather information based on the user’s location. <br />
                     <a href="https://prashantsharma0512.github.io/WeatherAppJS/" target='_blank' className='text-orange-400 '>[Project Link]</a>
@@ -42,7 +42,7 @@ const Project = () => {
                         <img src={ecom} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-left text-white p-4'>
+                <div className='w-full text-justify text-white p-4'>
                     <h1 className='text-2xl pb-2'>E-Commerce Website</h1>
                     A modern e-commerce site created with React, styled using Tailwind CSS, and powered by Firebase. It includes features like product listings, cart functionality, and user authentication.
                     <br />
@@ -64,7 +64,7 @@ const Project = () => {
                         <img src={otp} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-left text-white p-4'>
+                <div className='w-full text-justify text-white p-4'>
                     <h1 className='text-2xl pb-2'>OTP Generator</h1>
                     An OTP (One-Time Password) generator creates unique, temporary codes for secure authentication.Build using html,css,JavaScript. <br />
                     <a href="https://prashantsharma0512.github.io/OTP-Generator/" target='_blank' className='text-orange-400 '>[Project Link]</a>
@@ -87,7 +87,7 @@ const Project = () => {
                         <img src={port} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-left text-white p-4'>
+                <div className='w-full text-justify text-white p-4'>
                     <h1 className='text-2xl pb-2'>Portfolio Website</h1>
                     A sleek and responsive portfolio website crafted with React.js and styled using Tailwind CSS. Showcase your skills, projects, and achievements in an organized and visually appealing manner. <br />
                     <a href=" https://prashant-portfolio-one.vercel.app/" target='_blank' className='text-orange-400 '>[Project Link]</a>
