@@ -20,9 +20,9 @@ function Nav() {
                 <div className='max-md:hidden flex justify-center items-center gap-4 '>
                     <ul className='flex gap-8 '>
                         <li>
-                            <NavLink to="/"
+                            <a
                                 className={(isActive) => ` block py-2 pr-4 pl-3 ${isActive ? "bg-orange" : "text-orange-700"}duration-200 text-zinc-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-white hover:underline  lg:p-0 font-semibold `}
-                            >Home</NavLink>
+                            >Home</a>
                         </li>
                         <li>
                             <a 
@@ -46,8 +46,10 @@ function Nav() {
                         </li>
                         <li>
                             <a href='https://www.linkedin.com/in/prashant-sharma-0216ba251'
-                            target='_blank'>
-                                <FaLinkedinIn color='white' size={30} />
+                            target='_blank' 
+                            className={` lg:hover:bg-transparent lg:border-0 text-zinc-400 lg:p-0 font-semibold hover:underline `}
+                            >
+                                <FaLinkedinIn color='white' size={20}  />
                             </a>
                         </li>
                     </ul>
