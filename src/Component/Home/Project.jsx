@@ -102,6 +102,29 @@ const Project = () => {
 
                 </div>
             </center>
+            {/* fifth project */}
+            <center className='flex justify-center max-md:flex-wrap'>
+                <div className='w-full pb-2 border-zinc-700 '>
+                    <center className=' flex justify-center items-center'>
+                        <img src={otp} alt="" className='w-60 h-40' />
+                    </center>
+                </div>
+                <div className='w-full text-justify text-white p-4'>
+                    <h1 className='text-2xl pb-2'>Blog Website</h1>
+                    A sleek and responsive portfolio website crafted with React.js and styled using Tailwind CSS. Showcase your skills, projects, and achievements in an organized and visually appealing manner. <br />
+                    <a href=" https://prashant-portfolio-one.vercel.app/" target='_blank' className='text-orange-400 '>[Project Link]</a>
+                   
+                    <br />
+                    <br />
+                    <div className='flex gap-4'>
+                        <span className={cls}>React</span>
+                        <span className={cls}>taiwind</span>
+                        <span className={cls}>AppWrite</span>
+                        <span className={cls}>React Hook Form</span>
+                    </div>
+
+                </div>
+            </center>
 
         </div>
     )
