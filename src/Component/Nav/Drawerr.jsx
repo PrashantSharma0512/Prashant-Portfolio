@@ -7,7 +7,7 @@ import { LiaCloudDownloadAltSolid } from "react-icons/lia";
 import { RiContactsLine } from "react-icons/ri";
 import { FaArrowLeft } from "react-icons/fa";
 import { BiLogoPinterest } from "react-icons/bi";
-import resume from '../Image/prashant_resume_.pdf'
+import resume from '../Image/Prashant_Sharma_Resume.pdf'
 const Drawerr = () => {
   const [isopen, setIsopen] = useState(false)
   const style = "hover:bg-zinc-400 uppercase w-full  "

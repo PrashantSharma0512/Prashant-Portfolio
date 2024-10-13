@@ -4,7 +4,7 @@ import logo from '../Image/react.svg';
 import Drawerr from './Drawerr';
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoPinterest } from "react-icons/bi";
-import resume from '../Image/prashant_resume_.pdf'
+import resume from '../Image/Prashant_Sharma_Resume.pdf'
 
 function Nav() {
     return (
