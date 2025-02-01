@@ -7,7 +7,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import port from '../Image/port.png'
 
 const Project = () => {
-    const cls = 'pt-1 pb-1 pl-5 pr-5 rounded-lg text-purple-900 bg-purple-500 bg-opacity-15 border border-transparent'
+    const cls = 'pt-1 pb-1 pl-5 pr-5 rounded-lg text-purple-900 bg-purple-500 bg-opacity-15 border border-transparent trancate'
     return (
         <div className='flex flex-col justify-start items-center'>
             <center id='project' className='text-white text-4xl'>Projects</center>
@@ -26,7 +26,7 @@ const Project = () => {
                     <a href="https://prashantsharma0512.github.io/WeatherAppJS/" target='_blank' className='text-orange-400 '>[Project Link]</a>
                     <br />
                     <br />
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 flex-wrap'>
                         <span className={cls}>HTML</span>
                         <span className={cls}>CSS</span>
                         <span className={cls}>JavaScript</span>
@@ -43,12 +43,12 @@ const Project = () => {
                         <img src={ecom} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-justify text-white p-4'>
+                <div className='w-full  text-white p-4 text-justify'>
                     <h1 className='text-2xl pb-2'>E-Commerce Website</h1>
                     A modern e-commerce site created with React, styled using Tailwind CSS, and powered by Firebase. It includes features like product listings, cart functionality, and user authentication.
                     <br />
                     <br />
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 flex-wrap'>
                         <span className={cls}>React</span>
                         <span className={cls}>Tailwind</span>
                         <span className={cls}>Firebase</span>
@@ -59,19 +59,19 @@ const Project = () => {
             <br />
             <br />
             {/* Third project */}
-            <center className=' w-full flex justify-center max-md:flex-wrap '>
+            <center className=' w-full flex justify-center max-md:flex-wrap'>
                 <div className='w-full pb-2 border-zinc-700 '>
-                    <center className=' flex justify-center items-center'>
+                    <center className='flex justify-center items-center'>
                         <img src={otp} alt="" className='w-60 h-40' />
                     </center>
                 </div>
-                <div className='w-full text-justify text-white p-4'>
+                <div className='w-full  text-white text-justify p-4'>
                     <h1 className='text-2xl pb-2'>OTP Generator</h1>
                     An OTP (One-Time Password) generator creates unique, temporary codes for secure authentication.Build using html,css,JavaScript. <br />
                     <a href="https://prashantsharma0512.github.io/OTP-Generator/" target='_blank' className='text-orange-400 '>[Project Link]</a>
                     <br />
                     <br />
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 flex-wrap'>
                         <span className={cls}>HTML</span>
                         <span className={cls}>CSS</span>
                         <span className={cls}>Javascript</span>
@@ -95,7 +95,7 @@ const Project = () => {
                    
                     <br />
                     <br />
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 flex-wrap'>
                         <span className={cls}>HTML</span>
                         <span className={cls}>CSS</span>
                         <span className={cls}>Javascript</span>
@@ -117,9 +117,9 @@ const Project = () => {
                    
                     <br />
                     <br />
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 flex-wrap'>
                         <span className={cls}>React</span>
-                        <span className={cls}>taiwind</span>
+                        <span className={cls}>Taiwind Css</span>
                         <span className={cls}>AppWrite</span>
                         <span className={cls}>React Hook Form</span>
                     </div>
