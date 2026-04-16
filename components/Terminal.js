@@ -48,39 +48,39 @@ const Terminal = () => {
   };
 
   return (
-    <div className="pb-20" id="terminal">
+    <div className="section-padding border-b border-white/5" id="terminal">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl font-bold text-white px-4"
+        className="mb-10 text-center text-4xl sm:text-5xl font-bold text-white tracking-tight"
       >
-        Interactive Terminal
+        Interactive <span className="text-accent">Shell</span>
       </motion.h2>
-      <div className="flex justify-center px-4">
+      <div className="flex justify-center">
         <motion.div 
           whileInView={{ opacity: 1, scale: 1 }}
           initial={{ opacity: 0, scale: 0.95 }}
-          className="relative w-full max-w-3xl h-80 bg-slate-900 border border-slate-800 rounded-lg overflow-hidden shadow-2xl flex flex-col font-mono text-sm"
+          className="relative w-full max-w-4xl h-[450px] bg-slate-900 border border-white/10 rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] flex flex-col font-mono text-xs sm:text-sm"
           onClick={() => inputRef.current?.focus()}
         >
           {/* Scanline Effect */}
-          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.1)_50%),linear-gradient(90deg,rgba(255,0,0,0.03),rgba(0,255,0,0.01),rgba(0,0,255,0.03))] bg-[length:100%_4px,3px_100%] z-10 opacity-30"></div>
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.05)_50%),linear-gradient(90deg,rgba(255,0,0,0.01),rgba(0,255,0,0.01),rgba(0,0,255,0.01))] bg-[length:100%_4px,3px_100%] z-20 opacity-50"></div>
           
           {/* Terminal Header */}
-          <div className="bg-slate-800 px-4 py-2 flex items-center justify-between z-20">
+          <div className="bg-slate-800/50 backdrop-blur-md px-4 py-3 flex items-center justify-between z-30 border-b border-white/5">
             <div className="flex gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-500" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500" />
-              <div className="w-3 h-3 rounded-full bg-green-500" />
+              <div className="w-3 h-3 rounded-full bg-red-500/80" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+              <div className="w-3 h-3 rounded-full bg-green-500/80" />
             </div>
-            <div className="text-slate-400 text-xs">visitor@prashant-portfolio: ~</div>
+            <div className="text-slate-500 text-[10px] uppercase tracking-widest font-bold">zsh — prashant — 80x24</div>
           </div>
 
           {/* Terminal Body */}
           <div 
             ref={terminalRef}
-            className="flex-grow p-4 overflow-y-auto space-y-2 text-green-400 z-20"
+            className="flex-grow p-4 sm:p-6 overflow-y-auto space-y-3 text-green-400/90 z-20 custom-scrollbar"
           >
             {history.map((line, i) => (
               <div key={i} className="flex flex-col">

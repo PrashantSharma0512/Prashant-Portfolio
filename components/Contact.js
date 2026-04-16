@@ -7,58 +7,79 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className="border-b border-slate-900 pb-20" id="contact">
+    <div className="section-padding border-b border-primary/50" id="contact">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="my-10 text-center text-4xl text-white font-bold"
+        className="mb-20 text-center text-4xl sm:text-5xl font-bold text-white tracking-tight"
       >
-        Get in Touch
+        Let's <span className="text-accent">Connect</span>
       </motion.h2>
-      <div className="flex flex-wrap lg:justify-center">
+
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16">
+        {/* Contact Info */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 1 }}
-          className="w-full lg:w-1/2 p-4"
+          initial={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.8 }}
+          className="space-y-8"
         >
-          <div className=" glass-card p-8 h-full flex flex-col justify-center space-y-8">
-            <h3 className="text-2xl font-semibold text-white mb-4">Let's Connect</h3>
-            <p className="text-slate-400 mb-8">
-              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
-            </p>
-            
+          <div className="glass-card p-8 border-white/5 relative overflow-hidden group">
+            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
             <div className="space-y-6">
-              <div className="flex items-center gap-4 text-slate-300">
-                <div className="p-3 bg-slate-800 rounded-lg text-accent">
-                  <FiMapPin size={24} />
+              <div className="flex items-center gap-4 group/item">
+                <div className="p-4 bg-accent/10 rounded-2xl text-accent group-hover/item:bg-accent group-hover/item:text-white transition-all duration-300">
+                  <FiMail className="text-2xl" />
                 </div>
-                <span>{CONTACT.address}</span>
+                <div>
+                  <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">Email</p>
+                  <a href={`mailto:${CONTACT.email}`} className="text-slate-200 hover:text-accent font-medium text-lg transition-colors">
+                    {CONTACT.email}
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center gap-4 text-slate-300">
-                <div className="p-3 bg-slate-800 rounded-lg text-accent">
-                  <FiPhone size={24} />
+
+              <div className="flex items-center gap-4 group/item">
+                <div className="p-4 bg-accent/10 rounded-2xl text-accent group-hover/item:bg-accent group-hover/item:text-white transition-all duration-300">
+                  <FiPhone className="text-2xl" />
                 </div>
-                <span>{CONTACT.phoneNo}</span>
+                <div>
+                  <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">Phone</p>
+                  <a href={`tel:${CONTACT.phoneNo}`} className="text-slate-200 hover:text-accent font-medium text-lg transition-colors">
+                    {CONTACT.phoneNo}
+                  </a>
+                </div>
               </div>
-              <div className="flex items-center gap-4 text-slate-300">
-                <div className="p-3 bg-slate-800 rounded-lg text-accent">
-                  <FiMail size={24} />
+
+              <div className="flex items-center gap-4 group/item">
+                <div className="p-4 bg-accent/10 rounded-2xl text-accent group-hover/item:bg-accent group-hover/item:text-white transition-all duration-300">
+                  <FiMapPin className="text-2xl" />
                 </div>
-                <a href={`mailto:${CONTACT.email}`} className="hover:text-white transition-colors">
-                  {CONTACT.email}
-                </a>
+                <div>
+                  <p className="text-xs text-slate-500 uppercase tracking-widest font-bold">Location</p>
+                  <p className="text-slate-200 font-medium text-lg">{CONTACT.address}</p>
+                </div>
               </div>
             </div>
+            
+            {/* Background design */}
+            <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -z-10 group-hover:bg-accent/10 transition-colors" />
+          </div>
+          
+          <div className="glass-card p-8 border-white/5">
+            <h4 className="text-white font-bold mb-4">Availability</h4>
+            <p className="text-slate-400 text-sm leading-relaxed italic">
+              Currently open to relocation and remote opportunities. I respond within 24 hours.
+            </p>
           </div>
         </motion.div>
 
+        {/* Contact Form */}
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 1 }}
-          className="w-full lg:w-1/2 p-4"
+          initial={{ opacity: 0, x: 50 }}
+          transition={{ duration: 0.8 }}
         >
           <form 
             action="https://formspree.io/f/mjkbvlqr" 

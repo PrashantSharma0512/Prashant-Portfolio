@@ -19,39 +19,40 @@ const iconVariants = (duration) => ({
 
 const Skills = () => {
   return (
-    <div className="border-b border-slate-900 pb-24" id="skills">
+    <div className="section-padding border-b border-white/5" id="skills">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl text-white font-bold"
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.5 }}
+        className="mb-20 text-center text-4xl sm:text-5xl font-bold text-white tracking-tight"
       >
-        Technologies
+        My <span className="text-accent">Toolkit</span>
       </motion.h2>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
-      >
+      <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-10">
         {SKILLS.map((skill, index) => {
           const Icon = skill.icon;
           return (
             <motion.div
               key={skill.name}
-              variants={iconVariants(2 + index * 0.5)}
+              variants={iconVariants(2 + index * 0.2)}
               initial="initial"
+              whileHover={{ scale: 1.1, rotate: 5 }}
               animate="animate"
-              className="rounded-2xl border-4 border-slate-800 p-6 glass-card group relative"
+              className="group relative"
             >
-              <Icon className={`text-7xl ${skill.color} group-hover:scale-110 transition-transform duration-300`} />
-              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity text-xs font-semibold uppercase tracking-wider text-slate-400">
-                {skill.name}
+              <div className="rounded-3xl border border-white/10 p-6 sm:p-8 glass-card flex flex-col items-center justify-center gap-4 transition-all duration-300 hover:border-accent/40 hover:shadow-[0_0_30px_rgba(99,102,241,0.15)]">
+                <Icon className={`text-5xl sm:text-6xl ${skill.color} transition-all duration-300 group-hover:drop-shadow-[0_0_15px_currentColor]`} />
+                <span className="text-slate-400 text-xs font-mono uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                  {skill.name}
+                </span>
               </div>
+              
+              {/* Background glow */}
+              <div className={`absolute -inset-2 rounded-3xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity -z-10 ${skill.color.replace('text-', 'bg-')}`} />
             </motion.div>
           );
         })}
-      </motion.div>
+      </div>
     </div>
   );
 };

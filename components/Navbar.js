@@ -18,36 +18,38 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="mb-20 flex items-center justify-between py-6 sticky top-0 z-50 backdrop-blur-md">
+    <nav className="mb-20 flex items-center justify-between py-6 sticky top-0 z-[100] backdrop-blur-md">
       <div className="flex flex-shrink-0 items-center">
-        <Link href="/" className="text-2xl font-bold tracking-tighter text-white">
-          PS<span className="text-accent">.</span>
+        <Link href="/" className="text-2xl font-bold tracking-tighter text-white group">
+          PS<span className="text-accent group-hover:animate-ping inline-block">.</span>
         </Link>
       </div>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex items-center justify-center gap-8">
+      <div className="hidden md:flex items-center justify-center gap-8 glass-card px-8 py-2 border-white/5">
         {navLinks.map((link) => (
-          <Link key={link.name} href={link.href} className="nav-link text-sm uppercase tracking-widest">
+          <Link key={link.name} href={link.href} className="nav-link text-xs uppercase tracking-[0.2em]">
             {link.name}
+            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-accent transition-all duration-300 group-hover:w-full" />
           </Link>
         ))}
       </div>
 
       {/* Social Icons & Mobile Menu Button */}
       <div className="flex items-center gap-4 text-2xl">
-        <div className="hidden md:flex items-center gap-4 text-slate-400">
-          <a href="https://www.linkedin.com/in/prashant-sharma-0216ba251" target="_blank" className="hover:text-white transition-colors">
+        <div className="hidden md:flex items-center gap-5 text-slate-400">
+          <a href="https://www.linkedin.com/in/prashant-sharma-0216ba251" target="_blank" className="hover:text-accent transition-all hover:scale-110">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/PrashantSharma0512" target="_blank" className="hover:text-white transition-colors">
+          <a href="https://github.com/PrashantSharma0512" target="_blank" className="hover:text-accent transition-all hover:scale-110">
             <FaGithub />
           </a>
         </div>
         
         <button 
-          className="md:hidden text-white"
+          className="md:hidden text-white z-[110] p-2 glass-card border-white/10"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
         >
           {isOpen ? <HiX /> : <HiMenuAlt3 />}
         </button>
@@ -57,30 +59,40 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden absolute top-full left-0 w-full bg-primary/95 backdrop-blur-xl border-b border-white/5 z-[100] shadow-2xl overflow-hidden"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 w-full h-screen bg-primary/95 backdrop-blur-2xl z-[105] flex flex-col items-center justify-center lg:hidden"
           >
-            <div className="flex flex-col items-center gap-6 py-10">
-              {navLinks.map((link) => (
-                <a
+            <div className="flex flex-col items-center gap-8">
+              {navLinks.map((link, i) => (
+                <motion.a
                   key={link.name}
                   href={link.href}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 + i * 0.1 }}
                   onClick={() => setIsOpen(false)}
-                  className="text-slate-300 hover:text-white text-xl font-medium transition-colors"
+                  className="text-white text-4xl font-bold tracking-tight hover:text-accent transition-colors"
                 >
                   {link.name}
-                </a>
+                </motion.a>
               ))}
-              <div className="flex justify-center gap-6 mt-4 text-2xl text-slate-400">
-                <a href="https://www.linkedin.com/in/prashant-sharma-0216ba251" target="_blank">
+              
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="flex justify-center gap-8 mt-12 text-3xl text-slate-400"
+              >
+                <a href="https://www.linkedin.com/in/prashant-sharma-0216ba251" target="_blank" className="hover:text-white">
                   <FaLinkedin />
                 </a>
-                <a href="https://github.com/PrashantSharma0512" target="_blank">
+                <a href="https://github.com/PrashantSharma0512" target="_blank" className="hover:text-white">
                   <FaGithub />
                 </a>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         )}
